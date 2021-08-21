@@ -1,0 +1,36 @@
+#grid-container{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    column-gap: 0px;
+    row-gap: 0px;
+   
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*display: grid;*/
+   /* grid-template-columns: 1fr;
+    grid-template-rows: 1fr;*/
+}
+.grid-div{
+    display: flex;
+    border: 1px solid gainsboro;
+    min-height: 100px;
+    min-width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.grid-div:hover{
+    cursor: pointer;
+}
+#grid-flex{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
