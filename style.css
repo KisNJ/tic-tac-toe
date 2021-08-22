@@ -9,16 +9,20 @@
    
 }
 body{
-    height: 100vh;
-    display: flex;
+    height: 80vh;
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    /*display: grid;*/
-   /* grid-template-columns: 1fr;
-    grid-template-rows: 1fr;*/
+    justify-content: center;*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr  0.25fr 1fr;
+
 }
 .grid-div{
     display: flex;
+  
     border: 1px solid gainsboro;
     min-height: 100px;
     min-width: 100px;
@@ -33,4 +37,25 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+header{
+  
+
+   text-align: center;
+}
+#info{
+    display: grid;
+    grid-template-columns: 0.25fr  0.25fr ;
+    grid-template-rows: 0.25fr  0.25fr;
+    column-gap: 2%;
+    row-gap: 2%;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+#reset{
+    grid-column: span 2;
+    min-height: 50px;
+}
+.players{
+    text-align: center;
 }
